@@ -15,7 +15,7 @@ FILES
 -`script.js` — all logic (data storage, rendering, audio, Reflection Mode)
 -`logo.png` — used as favicon and in the header
 -`assets/audio/` — ambient tracks from https://pixabay.com/music/
--`assets/images/` — background photography from https://unsplash.com/ & flower icons from https://pixabay.com/users/vectorart3246664608/ 
+-`assets/images/` — background photography from https://unsplash.com/ & flower icons from https://pixabay.com/
 
 
 Two visual registers, applied by context, not decoration**: dark cinematic
