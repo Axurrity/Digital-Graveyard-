@@ -4,27 +4,19 @@ A web-based interactive digital memorial garden, exploring how interaction desig
 can support reflective, non-performative digital mourning.
 
 PAGES
--`index.html` — landing page + the Garden (scattered photo pins across a
-  dark cinematic band; click a pin to visit that memorial)
--`create.html` — create a memorial: name, dates, photo, biography, favourite
-  quote, image gallery, memory timeline, favourite ambient sound, private toggle
--`memorial.html` — a memorial: dark "identity band" (photo, name, quote,
-  candle/flower gestures) + a tabbed cream body (About / Timeline / Memories
+-`index.html` — landing page + the Garden, scattered photo pins click a pin to visit that memorial or create one 
+-`create.html` — create a memorial: name, dates, photo, biography, favourite quote, image gallery, memory timeline, favourite ambient sound, private toggle
+-`memorial.html` — a memorial: dark "identity band" (photo, name, quote, candle/flower gestures) + a tabbed cream body (About / Timeline / Memories
   / Gallery / Reflections)
+ 
 
 FILES
 -`style.css` — all styling
 -`script.js` — all logic (data storage, rendering, audio, Reflection Mode)
--`logo.png` — site mark, used as favicon and in the header
--`assets/audio/` — royalty-free ambient tracks (Pixabay Music, no attribution required)
--`assets/images/` — background photography (Unsplash/Pexels, free for commercial
-  use) and flower icon graphics
+-`logo.png` — used as favicon and in the header
+-`assets/audio/` — ambient tracks from https://pixabay.com/music/
+-`assets/images/` — background photography from https://unsplash.com/ & flower icons from https://pixabay.com/users/vectorart3246664608/ 
 
-KEY DESIGN DECISIONS 
-There are no, no comment counts, no leaderboards.** The "Memories from others"
-panel deliberately has no like/heart icons, informed directly by Navon & Noy
-(2022) and Coppola & Mangone (2025) on the performative and social-capital
-dynamics of public grief on mainstream platforms.
 
 Two visual registers, applied by context, not decoration**: dark cinematic
 bands for viewing/presence (hero, Garden, a memorial's identity block), warm
