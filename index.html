@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Graveyard Collective</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="logo.png">
+</head>
+<body>
+  <header class="site">
+    <a class="wordmark" href="index.html" style="display:flex; align-items:center; gap:9px;">
+      <img src="logo.png" width="20" height="20" alt="">
+      Digital Graveyard Collective
+    </a>
+    <nav><a href="create.html">Create Memorial</a></nav>
+  </header>
+
+  <section class="dark-band hero-band">
+    <div class="hero-vignette"></div>
+    <div class="hero-light-rays"></div>
+    <div class="hero-trees"></div>
+    <div class="hero-fog"></div>
+    <div class="hero-particles">
+      <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+    </div>
+   
+    <div class="dark-band-inner">
+      <h1>Where memory becomes a place.</h1>
+      <p class="sub">A quiet digital space designed for remembrance, reflection and collective mourning.</p>
+      <div class="btn-row">
+        <a href="#gardenScene" class="btn btn-inverse">Enter the Garden</a>
+      </div>
+      <div class="hero-divider"><span>or</span></div>
+      <a href="create.html" class="hero-secondary-link">Create a Memorial</a>
+    </div>
+  </section>
+
+  <section class="dark-band garden-band">
+    <div class="garden-particles">
+      <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <div class="dark-band-inner">
+      <h2>Memory Garden</h2>
+      <p class="sub">Each memorial here represents a life remembered. Click on a photo to visit their memory garden.</p>
+      <div class="garden-scene" id="gardenScene"></div>
+      <div class="empty-state-dark" id="emptyState" style="display:none;">
+        <p>The garden is waiting for its first memory.</p>
+        <a href="create.html">Create the first one</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site">
+    Digital Graveyard Collective — a final year project prototype exploring interaction design for digital mourning.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

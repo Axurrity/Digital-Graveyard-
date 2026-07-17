@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create a Memorial - Digital Graveyard Collective</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="logo.png">
+</head>
+<body>
+  <header class="site">
+    <a class="wordmark" href="index.html" style="display:flex; align-items:center; gap:9px;">
+      <img src="logo.png" width="20" height="20" alt="">
+      Digital Graveyard Collective
+    </a>
+    <nav><a href="index.html">The Garden</a></nav>
+  </header>
+
+  <main>
+    <a class="back-link back-link-cream" href="index.html">← Back to the garden</a>
+    <h2 class="display" style="font-size:2rem; font-weight:300;">Create a Memorial</h2>
+    <p style="color:var(--muted-2); margin-top:10px; max-width:520px;">Create a beautiful space to remember your loved one. Take your time — this is yours to shape.</p>
+
+    <form class="memorial-form" id="createForm">
+      <div class="field">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="e.g. James Smith" required maxlength="80">
+      </div>
+
+      <div class="field">
+        <label for="type">This memorial is for</label>
+        <select id="type" name="type">
+          <option value="person">A person</option>
+          <option value="pet">A pet</option>
+        </select>
+      </div>
+
+      <div class="field-row">
+        <div class="field">
+          <label for="born">Date of Birth</label>
+          <input type="date" id="born" name="born">
+        </div>
+        <div class="field">
+          <label for="passed">Date of Passing</label>
+          <input type="date" id="passed" name="passed">
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="photoInput">Add a Photo</label>
+        <label class="photo-upload" id="photoUploadLabel" for="photoInput">Click to upload or drag and drop — JPG, PNG up to 10MB</label>
+        <input type="file" id="photoInput" accept="image/*" style="display:none;">
+        <img class="photo-preview" id="photoPreview" alt="Preview">
+      </div>
+
+      <div class="field">
+        <label for="tribute">About / Biography</label>
+        <textarea id="tribute" name="tribute" placeholder="Share what you'd like others to know..." maxlength="1200"></textarea>
+      </div>
+
+      <div class="field">
+        <label for="quote">Favourite Quote</label>
+        <input type="text" id="quote" name="quote" placeholder="A quote they loved, or that reminds you of them" maxlength="200">
+      </div>
+
+      <div class="field">
+        <label for="galleryInput">Gallery — additional photos </label>
+        <label class="photo-upload" for="galleryInput">Click to choose images</label>
+        <input type="file" id="galleryInput" accept="image/*" multiple style="display:none;">
+        <div class="photo-preview-strip" id="galleryPreviewStrip"></div>
+      </div>
+
+      <div class="field">
+        <label for="milestones">Memory Timeline</label>
+        <textarea id="milestones" name="milestones" placeholder="One memory per line, e.g.&#10;2015-06-01: Adopted from the shelter&#10;2019-03-12: Moved to the countryside" maxlength="2000"></textarea>
+        <small>Format: date: memory — one per line, shown in chronological order.</small>
+      </div>
+
+      <div class="field">
+        <label for="soundscape">Favourite Music / Ambient Sound</label>
+        <select id="soundscape" name="soundscape">
+          <option value="silence">Silence</option>
+          <option value="rain">Rain</option>
+          <option value="wind">Wind</option>
+          <option value="birdsong">Forest</option>
+          <option value="ocean">Ocean</option>
+        </select>
+        <small>Played when visitors choose Listen, or during Reflection Mode.</small>
+      </div>
+      
+      <div class="field">
+        <label style="display:flex; align-items:center; gap:10px; text-transform:none; letter-spacing:0;">
+          <input type="checkbox" id="privateToggle" name="isPrivate" style="width:auto;">
+          Make this memorial private (invite-only)
+        </label>
+        <small>Prototype note: this marks the memorial as private, but real access control would require a backend and user accounts — not implemented in this build, see report for discussion.</small>
+      </div>
+      <div class="btn-row" style="justify-content:flex-start; margin-top:10px;">
+        <button type="submit" class="btn btn-primary">Done — Create Memorial</button>
+      </div>
+    </form>
+  </main>
+
+  <footer class="site">
+    Digital Graveyard Collective — a final year project prototype exploring interaction design for digital mourning.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
